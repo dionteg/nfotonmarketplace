@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Divider /> should render the Divider with a light height 1`] = `
+.c0 {
+  border: 0;
+  height: 1px;
+  background: #E6E8EC;
+}
+
+<hr
+  aria-hidden="true"
+  class="c0"
+  height="light"
+  role="separator"
+/>
+`;
+
+exports[`<Section /> should render the Divider with a light height 1`] = `
+.c0 {
+  border: 0;
+  height: 1px;
+  background: #E6E8EC;
+}
+
+<hr
+  aria-hidden="true"
+  class="c0"
+  height="light"
+  role="separator"
+/>
+`;
