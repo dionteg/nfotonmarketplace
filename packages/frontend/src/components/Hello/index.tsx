@@ -15,7 +15,12 @@ export default function Hello({ children }: HelloProps) {
 
   return (
     <Container>
-      <h1>Hello Noia 😎</h1>
+      <h1>
+        Hello Noia{' '}
+        <span role="img" aria-label="Smiling face with sunglasses">
+          😎
+        </span>
+      </h1>
       {children}
       <button onClick={() => changeSelectedTheme('dark')}>Dark theme</button>
       <button onClick={() => changeSelectedTheme('light')}>Light theme</button>

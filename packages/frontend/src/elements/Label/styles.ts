@@ -23,7 +23,7 @@ const variants = {
     soon: (theme: DefaultTheme) => css`
       color: ${theme.colors.neutrals.white[500]};
       background-color: ${theme.colors.primary.purple};
-    `
+    `,
   },
   outlined: {
     default: (theme: DefaultTheme) => css`
@@ -46,14 +46,14 @@ const variants = {
       color: ${theme.colors.primary.purple};
       border: 0.125rem solid ${theme.colors.primary.purple};
     `,
-  }
+  },
 } as const
 
 type WrapperProps = Pick<LabelProps, 'variant' | 'color'>
 
 export const Wrapper = styled.div<WrapperProps>`
   width: fit-content;
-  padding: ${({ variant }) => variant === 'solid' ? '0.375rem 0.5rem' : '0.25rem 0.375rem'};
+  padding: ${({ variant }) => (variant === 'solid' ? '0.375rem 0.5rem' : '0.25rem 0.375rem')};
   display: flex;
   border-radius: 0.25rem;
   box-sizing: border-box;

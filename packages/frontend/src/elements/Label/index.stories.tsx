@@ -7,15 +7,15 @@ export default {
   component: Label,
   argTypes: {
     content: {
-      type: 'string'
+      type: 'string',
     },
     color: {
       control: {
         type: 'select',
-        options: ['default', 'popular', 'new', 'featured', 'soon']
-      }
-    }
-  }
+        options: ['default', 'popular', 'new', 'featured', 'soon'],
+      },
+    },
+  },
 } as Meta
 
 const Template: Story<LabelProps> = (args) => <Label {...args} />

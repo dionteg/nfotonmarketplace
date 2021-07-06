@@ -19,7 +19,7 @@ describe('<Divider />', () => {
     expect(container.firstChild).toHaveStyle({
       border: '0',
       height: '2px',
-      background: '#E6E8EC'
+      background: '#E6E8EC',
     })
   })
 })

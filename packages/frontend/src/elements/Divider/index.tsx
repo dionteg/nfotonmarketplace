@@ -5,7 +5,5 @@ export type DividerProps = {
 }
 
 export default function Divider({ height = 'light' }: DividerProps) {
-  return (
-    <DividerStyled role="separator" aria-hidden="true" height={height} />
-  )
+  return <DividerStyled role="separator" aria-hidden="true" height={height} />
 }
