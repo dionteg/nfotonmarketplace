@@ -2,8 +2,8 @@ import styled, { css } from 'styled-components'
 import { DividerProps } from '.'
 
 const heights = {
-  'light': 1,
-  'thin': 2
+  light: 1,
+  thin: 2,
 }
 
 export const Divider = styled.hr<DividerProps>`

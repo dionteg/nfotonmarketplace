@@ -11,4 +11,4 @@ export const Container = styled.button`
       fill: ${({ theme: { colors } }) => colors.primary.blue};
     }
   }
-  `
+`

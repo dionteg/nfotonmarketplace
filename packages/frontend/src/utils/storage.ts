@@ -1,4 +1,4 @@
-import { VariantionType } from "../types"
+import { VariantionType } from '../types'
 
 interface setToLSProps {
   key: string
