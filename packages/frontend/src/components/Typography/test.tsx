@@ -84,6 +84,17 @@ describe('<Typography />', () => {
     })
   })
 
+  it('should render the Typography with normal weight', () => {
+    const { container } = render(<Typography weight="normal">Normal text</Typography>)
+
+    screen.getByText('Normal text')
+
+    expect(container.firstChild).toBeInTheDocument()
+    expect(container.firstChild).toHaveStyle({
+      'font-weight': '400',
+    })
+  })
+
   it('should render the Typography with medium weight', () => {
     const { container } = render(<Typography weight="medium">Medium text</Typography>)
 
