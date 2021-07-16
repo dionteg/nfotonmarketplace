@@ -27,13 +27,25 @@
       ]
     },
     {
+      "login": "miguel-nascimento",
+      "name": "Miguel Nascimento",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31226227?v=4",
+      "profile": "https://github.com/miguel-nascimento/,
+      "contributions": [
+        "code"
+      ]
+    },
+    {
       "login": "allanneto",
       "name": "Allan Neto",
       "avatar_url": "https://avatars.githubusercontent.com/u/54034635?v=4",
       "profile": "https://github.com/allanneto",
       "contributions": [
         "code",
-        "ideas"
+        "ideas",
+		"review",
+		"mentoring",
+        "projectManagement"
       ]
     },
     {
