@@ -124,7 +124,7 @@ export const Buttons = styled.div`
 
 export const ButtonEarn = styled.button`
   background: ${({ theme }) => theme.colors.primary.blue};
-  color: #fff;
+  color: ${({ theme }) => theme.colors.neutrals.white[400]};
   transition: filter 0.2s;
 
   &:hover {

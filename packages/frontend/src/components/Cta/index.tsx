@@ -1,26 +1,31 @@
 import { useTheme } from '../../hooks/useTheme'
+import Typography from '../Typography'
 
 import { CTAContainer, ButtonEarn, ButtonDiscover, Buttons } from './styles'
 
 export default function CTA() {
   const {
     theme: { variant },
-    changeSelectedTheme,
   } = useTheme()
 
   return (
     <CTAContainer>
       <div>
-        <p>SAVE YOUR TIME WITH STACKS</p>
-        <h1>Earn free crypto with Crypter</h1>
-        <span>A creative agency that lead and inspire</span>
+        <Typography as={'p'} headline>
+          Save your time with stacks
+        </Typography>
+        <Typography as={'h1'}>Earn free crypto with Crypter</Typography>
+        <Typography as={'span'}>A creative agency that lead and inspire</Typography>
         <Buttons>
-          <ButtonEarn onClick={() => changeSelectedTheme('light')}>Earn now</ButtonEarn>
-          <ButtonDiscover onClick={() => changeSelectedTheme('dark')}>Discover more</ButtonDiscover>
+          <ButtonEarn>Earn now</ButtonEarn>
+          <ButtonDiscover>Discover more</ButtonDiscover>
         </Buttons>
       </div>
       <div>
-        <img src={`img-cta-${variant === 'dark' ? 'dark.png' : 'light.png'}`} alt="" />
+        <img
+          src={`${variant === 'dark' ? 'img-cta-dark.png' : 'img-cta-light.png'}`}
+          alt="Obra de arte"
+        />
       </div>
     </CTAContainer>
   )
